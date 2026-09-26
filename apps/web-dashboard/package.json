@@ -1,0 +1,19 @@
+{
+  "name": "@guardian/web-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@guardian/shared-api": "*",
+    "@guardian/shared-types": "*",
+    "@guardian/shared-utils": "*",
+    "@guardian/shared-validation": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

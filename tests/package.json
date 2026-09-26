@@ -1,0 +1,21 @@
+{
+  "name": "@guardian/tests",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@guardian/api-service": "*",
+    "@guardian/shared-api": "*",
+    "@guardian/shared-types": "*",
+    "@guardian/shared-utils": "*",
+    "@guardian/shared-validation": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

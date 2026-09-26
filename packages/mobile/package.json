@@ -1,0 +1,16 @@
+{
+  "name": "@guardian/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@guardian/shared": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

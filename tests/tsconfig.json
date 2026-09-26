@@ -1,0 +1,29 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "..",
+    "lib": ["ES2022", "DOM"],
+    "jsx": "react-jsx",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "paths": {
+      "@guardian/shared-types": ["../packages/shared-types/src/index.ts"],
+      "@guardian/shared-utils": ["../packages/shared-utils/src/index.ts"],
+      "@guardian/shared-validation": ["../packages/shared-validation/src/index.ts"],
+      "@guardian/shared-api": ["../packages/shared-api/src/index.ts"],
+      "@guardian/api-service": ["../services/api/src/index.ts"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "../apps/child-mobile/src/**/*",
+    "../apps/parent-mobile/src/**/*",
+    "../packages/shared-types/src/**/*",
+    "../packages/shared-utils/src/**/*",
+    "../packages/shared-validation/src/**/*",
+    "../packages/shared-api/src/**/*",
+    "../services/api/src/**/*"
+  ]
+}

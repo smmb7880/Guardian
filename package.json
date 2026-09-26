@@ -1,0 +1,26 @@
+{
+  "name": "guardian-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Guardian cross-platform parental control application monorepo",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*",
+    "tests"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "type-check": "npm run type-check --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "eslint \"{apps,services,packages,tests}/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}
